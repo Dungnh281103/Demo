@@ -1,0 +1,391 @@
+    @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+    } */
+
+    .sticky {
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        flex-direction: column;
+    }
+
+    .header {
+        height: 63px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        background: #111 no-repeat center/cover;
+    }
+
+    .textHeader {
+        margin-left: 42px;
+    }
+
+    .ncc {
+        height: 40px;
+        width: 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .taskBar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-bars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 11px;
+        height: 20px;
+        width: 30px;
+    }
+
+    .nav_1 {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        background-color: black;
+        inset: 0;
+        height: 0px;
+        top: 100%;
+        transition: 1s;
+        display: none;
+        gap: 10px;
+        width: 100vw;
+        opacity: 0.8;
+
+    }
+
+    .hide1{
+        transition: 1s;
+        display: block;
+    }
+    .hide {
+        transition: 1s;
+        height: 400px;
+    }
+    .nav_1 li {
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+
+
+    .nav_1 a {
+        cursor: pointer;
+    }
+    .text-sn{
+        text-decoration: none;
+        color: red;
+    }
+
+    .text-sm {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .nav_1 a:hover {
+        color: #ff0000;
+    }
+
+    button{
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+    }
+
+    .btn2{
+        background-color: red;
+        height: 30px;
+        width: 90px;
+        margin: 8px ;
+    }
+
+    .btn1{
+        /* background: no-repeat center/cover; */
+        height: 30px;
+        width: 80px;
+        margin: 8px;
+    }
+/*css cho đăng nhập
+*/
+    .formMain{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow:0px 0px 17px 2px rgba(255, 255, 255, 0.9);
+        z-index: 1000;
+    }
+
+    .form-login{
+        border-radius: 15px;
+        height: auto;
+        width: 400px;
+        background-color: black;
+        padding: 30px;
+        color: white;
+        border: 0.1px solid white;
+    }
+
+    .headForm{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-login input{
+        width: 100%;
+        height: 50px;
+        font-size: 17px;
+        outline: none;
+        border-radius: 6px;
+        border: 0.2px solid white rgba(0, 0, 0, 0.3);
+        background: fixed;
+        color: white;
+        padding: 8px;
+    }
+
+    .formInput p{
+        margin: 10px 0;
+    }
+
+    .forgetPass{
+        color: red;
+        font-size: 15px;
+        float: right;
+        margin: 10px;
+        text-decoration: none;
+    }
+
+    .form-login button{
+        width: 100%;
+        height: 35px;
+        border-radius: 20px;
+        background-color: #ff0000;
+        color: #fff;
+        font-size: 14px;   
+        margin: 20px;
+    }
+
+    .register {
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .register a:hover{
+        text-decoration: underline;
+    }
+
+    .forgetPass a:hover{
+        text-decoration: underline;
+        color: #ff0000;
+    }
+
+    .fa-xmark{
+        color: #FDFDFD;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .fa-xmark:hover{
+        color: red;
+    }
+
+    .hide2{
+        display: none !important;
+        transition: 1s;
+    }
+
+    
+/*css cho đăng kí
+*/
+    .formRegisterMain{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow:0px 0px 17px 2px rgba(255, 255, 255, 0.9);
+        z-index: 1000;
+    }
+
+    .form-register{
+        border-radius: 15px;
+        height: auto;
+        width: 400px;
+        background-color: black;
+        padding: 30px;
+        color: white;
+        border: 0.1px solid white;
+    }
+
+    .form-register span input{
+        width: 100%;
+        height: 50px;
+        font-size: 17px;
+        outline: none;
+        border-radius: 6px;
+        border: 0.2px solid white rgba(0, 0, 0, 0.3);
+        background: fixed;
+        color: white;
+        padding: 8px;
+    }
+
+    .form-register .checkBox{
+        height: 20px;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+
+    .checkBox {
+        margin-right: 10px;
+    }
+
+    .Dk {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(75, 93, 232);
+    }
+
+    .form-register button{
+        width: 100%;
+        height: 35px;
+        border-radius: 20px;
+        background-color: #ff0000;
+        color: #fff;
+        font-size: 14px;   
+        margin: 20px 0;
+    }
+
+/*
+css cho footer
+*/
+    footer{
+        background-color: #111;
+        display: inline-block;
+        position: relative; 
+        bottom: 0;
+        width: 100%;
+    }
+    .footerContainer{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .socialIcons a{
+        padding: 10px;
+        text-decoration: none;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    .socialIcons a i{
+        font-size: 31px;
+        color: black;
+        opacity: 0.9;
+    }
+    .socialIcons a:hover{
+        background-color: #111;
+        transition: 0.5s;
+    }
+
+    .socialIcons a:hover i{
+        color: white;
+        transition: 0.5s;
+    }
+
+    .footerNav{
+        margin: 30px 0;
+    }
+
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footerNav ul li a{
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 16px;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+
+    .footerBottom{
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+    }   
+    .footerBottom p{
+        color: white;
+    }
+    .sora{
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 5px 0px;
+    }
+
+    .img-a{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
