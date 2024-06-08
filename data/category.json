@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Móng Vuốt-T16",
+    "origin": "Viet Nam",
+    "release_date": "07/06/2024",
+    "rating": "T16",
+    "description": "Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên (16+)",
+    "genre": "Hài, Kinh dị",
+    "duration": 96,
+    "format": "2D",
+    "showtimes": ["13:40", "15:45", "17:30", "21:40"],
+    "image_url": "./img/image1.png"
+  },
+  {
+    "title": "Những Gã Trai Hư: Chơi Hay Bị Xơi-T18",
+    "origin": "Mỹ",
+    "release_date": "07/06/2024",
+    "rating": "T18",
+    "description": "Phim được phổ biến đến người xem từ đủ 18 tuổi trở lên (18+)",
+    "genre": "Hành động",
+    "duration": 115,
+    "format": "2D",
+    "showtimes": ["10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "21:00", "21:30", "22:00", "23:30"],
+    "image_url": "./img/image2.png"
+  },
+  {
+    "title": "PHIM ĐIỆN ẢNH DORAEMON: NOBITA VÀ BẢN GIAO HƯỞNG ĐỊA CẦU (Lồng Tiếng)",
+    "origin": "Nhật Bản",
+    "release_date": "07/06/2024",
+    "rating": "T16",
+    "description": "Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên (16+)",
+    "genre": "Hài",
+    "duration": 105,
+    "format": "2D",
+    "showtimes": ["13:40", "15:45", "17:30", "21:40"],
+    "image_url": "./img/image3.png"
+  },
+  {
+    "title": "Kami wa Game ni Ueteiru",
+    "origin": "Japan",
+    "release_date": "07/06/2024",
+    "rating": "T16",
+    "description": "Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên (16+)",
+    "genre": "Action, Harem, old durty",
+    "duration": 24,
+    "format": "2D",
+    "showtimes": ["13:40", "15:45", "17:30", "21:40"],
+    "image_url": "./img/image4.png"
+  },
+  {
+    "title": "Unnamed Memory",
+    "origin": "Japan",
+    "release_date": "07/06/2024",
+    "rating": "T16",
+    "description": "Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên (16+)",
+    "genre": "Anime, NTR, Romance",
+    "duration": 24,
+    "format": "2D",
+    "showtimes": ["13:40", "15:45", "17:30", "21:40"],
+    "image_url": "./img/image5.png"
+  },
+  {
+    "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu (Ss3)",
+    "origin": "Japan",
+    "release_date": "07/06/2024",
+    "rating": "T16",
+    "description": "Phim được phổ biến đến người xem từ đủ 16 tuổi trở lên (16+)",
+    "genre": "Anime, Action, Harem, Drama, Ecchi",
+    "duration": 24,
+    "format": "2D",
+    "showtimes": ["13:40", "15:45", "17:30", "21:40"],
+    "image_url": "./img/image6.png"
+  }
+  
+]

@@ -5,7 +5,9 @@
         padding: 0;
         box-sizing: border-box;
     }
-
+body{
+    background: #111;
+}
     /* html, body {
         width: 100%;
         height: 100%;
@@ -34,6 +36,8 @@
         font-size: 14px;
         font-weight: 900;
         background: #111 no-repeat center/cover;
+        position: absolute;
+        z-index: 9999;
     }
 
     .textHeader {
@@ -82,6 +86,8 @@
         gap: 10px;
         width: 100vw;
         opacity: 0.8;
+        z-index: 999;
+
 
     }
 
@@ -388,4 +394,122 @@ css cho footer
         max-width: 100%;
         height: auto;
         display: block;
+    }
+    .scheduleHead{
+        height: auto;
+        color: #FDFDFD;
+        text-align: center;
+        align-items: center;
+    }
+    .scheduleHead h2{
+        margin: 18px;
+    }
+    .schedule{  
+        margin: 18px;
+        border: #FDFDFD;
+        border-radius: 6px;
+        color: white;
+        width: 80px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.4px solid white;
+        cursor: pointer;
+    }
+    .schedule:hover{
+        background: red;
+    }
+    .scheduleHead p{
+        color: goldenrod;
+    }
+    .schedule1{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    .movies-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .movie-card {
+        color: white;
+        background-color: #111;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border: 0.5px solid white;
+        /* position: relative; */
+        /* flex: 1 0 400px; */
+        font-size: 18px;
+        height: 320px; 
+        z-index: 9;
+    }
+
+    @media screen and (max-width: 1400px) {
+        .movie-card {
+            flex: 1 0 400px;
+        
+        }
+    }
+
+    
+    
+    .movie-poster {
+        width: 200px;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .movie-details {
+        padding: 20px;
+        flex: 1;
+        height: 100%;
+    }
+
+    .p1{
+        color: #3c3c3e;
+    }
+    
+    .movie-details h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    .movie-details p {
+        margin: 5px 0;
+    }
+    
+    .movie-details .rating {
+        color: #ff4d4d;
+    }
+    
+    .showtimes span {
+        display: inline-block;
+        background-color: #3c3c3e;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 5px 5px 5px 0;
+    }
+    
+    .format {
+        background-color: #3c3c3e;
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
     }

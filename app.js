@@ -133,3 +133,36 @@ function changeImage() {
 
 // Thiết lập interval để thay đổi hình ảnh mỗi 5 giây
 setInterval(changeImage, 5000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('./data/category.json')
+        .then(response => response.json())
+        .then(data => {
+            const categoryContainer = document.getElementById('category-container');
+            // Create a wrapper for every two movie cards
+            for (let i = 0; i < data.length; i += 2) {
+                const movieWrapper = document.createElement('div');
+                movieWrapper.className = 'movies-container'; // New container for two movie cards
+                for (let j = i; j < i + 2 && j < data.length; j++) {
+                    const movie = data[j];
+                    const movieElement = document.createElement('div');
+                    movieElement.className = 'movie-card';
+                    movieElement.innerHTML = `
+                        <img src="${movie.image_url}" alt="${movie.title}" class="movie-poster">
+                        <div class="movie-details">
+                            <p class="p1">${movie.genre}    ${movie.duration} phút</p>
+                            <h3>${movie.title}</h3>
+                            <p>Xuất xứ: ${movie.origin}</p>
+                            <p>Khởi chiếu: ${movie.release_date}</p>
+                            <p class="rating">${movie.rating} - ${movie.description}</p>
+                            <h4>Lịch chiếu</h4>
+                            <div class="showtimes">${movie.showtimes.map(time => `<span>${time}</span>`).join('')}</div>
+                        </div>
+                    `;
+                    movieWrapper.appendChild(movieElement);
+                }
+                categoryContainer.appendChild(movieWrapper);
+            }
+        })
+        .catch(error => console.error('Error fetching data:', error));
+});
