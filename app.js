@@ -13,10 +13,10 @@
     let logInRegister = document.querySelector('.logInRegister')
     const imgElement = document.querySelector('.img-a');
     const images = [
-        '0017512.webp',
-        '0017613.webp',
-        'anh1.jpg',
-        'anh2.jpg'
+        './img/0017512.webp',
+        './img/0017613.webp',
+        './img/anh1.jpg',
+        './img/anh2.jpg'
     ];
 
     function toggleBodyScroll(enable) {
@@ -166,3 +166,22 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error fetching data:', error));
 });
+
+
+// giới thiệu
+var intro = document.querySelector('.intro')
+var produce = document.querySelector('.produce')
+var section1 = document.querySelector('.section1')
+var section2 = document.querySelector('.section2')
+
+intro.addEventListener('click', function(){
+    section1.classList.add('active')
+    section2.classList.remove('active')
+
+})
+
+produce.addEventListener('click', function(){
+    section2.classList.add('active')
+    section1.classList.remove('active')
+})
+
